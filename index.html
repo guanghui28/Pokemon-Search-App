@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Pokémon Search App</title>
+    </head>
+    <body>
+        <main id="main">
+            <h3 id="author">Made by Quang Huy (31/03/2024)</h3>
+            <h1 id="title">Pokémon Search App</h1>
+            <div id="app">
+                <div class="header">
+                    <label for="search-input" class="label-text"
+                        >Search for Pokémon Name or ID:</label
+                    >
+                    <div class="search-box">
+                        <input
+                            id="search-input"
+                            type="text"
+                            value=""
+                            required
+                        />
+                        <button type="button" id="search-button">Search</button>
+                    </div>
+                </div>
+                <div class="screen">
+                    <p class="identify">
+                        <span id="pokemon-name"></span>
+                        <span id="pokemon-id"></span>
+                    </p>
+                    <p class="size">
+                        <span id="weight"></span>
+                        <span id="height"></span>
+                    </p>
+                    <div id="image"></div>
+                    <div id="types"></div>
+                </div>
+                <div class="details">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Base</th>
+                                <th>Stats</th>
+                            </tr>
+                            <tr>
+                                <td>HP:</td>
+                                <td id="hp"></td>
+                            </tr>
+                            <tr>
+                                <td>Attack:</td>
+                                <td id="attack"></td>
+                            </tr>
+                            <tr>
+                                <td>Defense:</td>
+                                <td id="defense"></td>
+                            </tr>
+                            <tr>
+                                <td>Special Attack:</td>
+                                <td id="special-attack"></td>
+                            </tr>
+                            <tr>
+                                <td>Special Defense:</td>
+                                <td id="special-defense"></td>
+                            </tr>
+                            <tr>
+                                <td>Speed:</td>
+                                <td id="speed"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
